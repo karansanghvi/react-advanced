@@ -23,26 +23,26 @@ class App extends Component {
     return (
       <div className="App">
         {/* fragments */}
-        {/* <FragmentsDemo/>
-        <Table/> */}
+        <FragmentsDemo/>
+        <Table/>
 
         {/* pure components */}
-        {/* <ParentComp/> */}
+        <ParentComp/>
 
         {/* refs */}
-        {/* <RefDemo/> */}
+        <RefDemo/>
 
         {/* refs with class component */}
-        {/* <FocusInput/> */}
+        <FocusInput/>
 
         {/* forwarding refs */}
-        {/* <FRParentInput/> */}
+        <FRParentInput/>
 
         {/* portals */}
-        {/* <PortalDemo/> */}
+        <PortalDemo/>
 
         {/* error boundary */}
-        {/* <ErrorBoundary>
+        <ErrorBoundary>
           <Hero heroName="Batman"></Hero>
         </ErrorBoundary>
         
@@ -52,20 +52,20 @@ class App extends Component {
 
         <ErrorBoundary>
           <Hero heroName="Joker"></Hero>
-        </ErrorBoundary> */}
+        </ErrorBoundary>
 
         {/* high order components */}
-        {/* <ClickCounter/>
-        <HoverCounter/> */}
+        <ClickCounter/>
+        <HoverCounter/>
 
         {/* render props */}
-        {/* <ClickCounterTwo/>
+        <ClickCounterTwo/>
         <HoverCounterTwo/>
         <User render= {
           (isLoggedIn) =>  isLoggedIn ? 'karan' : 'guest'
         }
-        /> */}
-        {/* <Counter
+        />
+        <Counter
             render = {(count, incrementCount) => (
               <ClickCounterTwo count = {count} incrementCount = {incrementCount} />
             )}
@@ -75,7 +75,7 @@ class App extends Component {
             render = {(count, incrementCount) => (
               <HoverCounterTwo count = {count} incrementCount = {incrementCount} />
             )}
-        /> */}
+        />
 
         {/* context */}
         <UserProvider value="karan">
